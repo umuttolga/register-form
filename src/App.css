@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    font-family: "Roboto";
+    background-color: #D99AC5;
+}
+
+.register-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    text-align: center;
+    color: #B37BA4;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.inputbox {
+    background-color: #DCCDE8;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-evenly;
+    width: 300px;
+    padding: 10px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #fff;
+    
+}
+
+.input {
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #00100B;
+    color: #fff;
+    height: 30px;
+}
+
+.success-message {
+    background-color: #14BDEB;
+    color: #fff;
+    height: 20px;
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.spans {
+    color: red;
+}
