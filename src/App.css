@@ -26,7 +26,7 @@ body{
     justify-content: space-evenly;
     width: 300px;
     padding: 10px;
-    height: 500px;
+    height: 400px;
     border-radius: 5px;
     box-shadow: 0 0 3px #fff;
     
@@ -34,7 +34,7 @@ body{
 
 .input {
     height: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 

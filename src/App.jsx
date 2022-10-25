@@ -30,12 +30,19 @@ function App() {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (data.firstName && data.lastName && data.email) {
+    if (data.firstName && data.firstName.length > 6 ){
       setValid(true)
     }
     setSubmit(true)
   } 
   
+  const handleKeypress = (e) => {
+    e.preventDefault();
+    if (e.key === "Enter") {
+      handleSubmit
+    }
+  }
+
   const handleEmailNamehange = (e) => {
     e.preventDefault();
     setData((values) => ({
@@ -76,7 +83,7 @@ function App() {
       value={data.email}
       />
       {sumbit && !data.email && <span className='spans' id="email-error">Please enter your email</span>}
-      <button className='btn'>Register</button>
+      <button onKeyDown={handleKeypress} className='btn'>Register</button>
       
     </div>
     </form>
